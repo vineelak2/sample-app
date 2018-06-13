@@ -29,13 +29,13 @@
 		 <snapshotRepository>
 		    <id>nexus</id>
 		    <name>Internal Snapshot Releases</name>	 
-		    <url>http://18.237.80.189:8081/repository/mywebsnap/</url>
+		    <url>http://34.220.242.172:8081/repository/maven-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>nexus</id>
 		    <name>Internal Releases</name>
-		    <url>http://18.237.80.189:8081/repository/myweb/</url>
+		    <url>http://34.220.242.172:8081/repository/MyappRelease/</url>
 		</repository>
   	</distributionManagement>
 	
