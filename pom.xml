@@ -28,12 +28,14 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexus</id>
-		    <url>http://54.149.231.235:8081/nexus/content/repositories/snapshots/</url>
+		    <name>Internal Snapshot Releases</name>	 
+		    <url>http://18.237.80.189:8081/repository/mywebsnap/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>nexus</id>
-		    <url>http://54.149.231.235:8081/nexus/content/repositories/releases/</url>
+		    <name>Internal Releases</name>
+		    <url>http://18.237.80.189:8081/repository/myweb/</url>
 		</repository>
   	</distributionManagement>
 	
