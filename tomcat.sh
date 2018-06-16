@@ -5,6 +5,8 @@ scp -i /home/ubuntu/ec2key.pem -o StrictHostKeyChecking=no /var/lib/jenkins/work
 ##To pick latest version fron pom.xml and download##
 
 a=$(head -n 7 pom.xml | tail -n 1 |awk '{print $1}' | sed -e "s/<version>//" | sed 's/.\{10\}$//')
+or
+cat pom.xml | grep "<version>" | head -n 1 |awk '{print $1}' |sed -e "s/<version>//" |sed 's/<.*//'
 echo $a
 rm -rf *.war
 wget http://18.236.64.135:8081/repository/maven-releases/in/mpcechno/myapp/$a/myapp-$a.war
